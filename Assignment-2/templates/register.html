@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>Sign Up Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <p>Register</p>
+        </div>
+        <div class="form">
+            <div class="user">
+                <input type="text" class="first_name" required>
+                <label for="username">First name</label>
+            </div>
+            <div class="user">
+                <input type="text" class="last_name" required>
+                <label for="username">Last name</label>
+            </div>
+            <div class="user">
+                <input type="email" class="email" required>
+                <label for="username">Email</label>
+            </div>
+            <div class="pass">
+                <input type="password" class="password" required>
+                <label for="password">Enter Password</label>
+            </div>
+            <div class="pass">
+                <input type="password" class="password" required>
+                <label for="password">Re-Enter Password</label>
+            </div>
+            <div class="button">
+                <button class="btn"><a class="hov" href=login>Sign Up</a> </button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
