@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#3f5efb,#fc466b);
+
+}
+form{
+    width: 25rem;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255, 0.03);
+    box-shadow: 0 9px 33px 0 rgba(31, 38, 135, .37);
+    border-radius: 35px;
+    border-left: 1px solid rgba(255,255,255, .3);
+    border-top: 3px solid rgba(255, 255, 255, .3);
+
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+    color:rgb(28, 5, 83)
+    letter-spacing: 3px;
+    margin-top: 4%;
+    opacity: .6;
+}
+label{
+    font-size: 28px;
+    color: white;
+    margin-top: 10%;
+    margin-left: 10%;
+    opacity: .7;
+}
+input{
+    width: 80%;
+    margin: 5% auto;
+    margin-bottom: 8%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: rgb(129, 9, 9)29, 9, 9);
+    border-bottom: 3px solid black;
+    opacity: .8;
+}
+button{
+    width: 30%;
+    margin: 3% auto;
+    color: white;
+    font-size: 22px;
+    background: rgba(255,255,255, 0.06);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px rgba(31, 38, 135, .37);
+    border-left: 1px solid rgba(255,255,255, .3);
+    border-top: 1px solid rgba(255,255,255, .3);
+}
+a{
+    font-size: 18px;
+    text-align: center;
+    color: rgb(230, 181, 21)
+    opacity: .7;
+}
