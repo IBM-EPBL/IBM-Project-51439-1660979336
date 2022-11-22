@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='Register.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+          <form action="http://localhost:5000/Register" method="POST">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" name="username" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" name="email" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" name="phone" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" name="password" placeholder="Enter your password" required>
+              </div>
+          
+            </div>
+            <div class="button">
+                <button onclick="aru() type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+            
+    
+</body>
+<script>
+  function aru() {
+    var username=document.getElementById("username");
+    var email=document.getElementById('emailid');
+    var phone=document.getElementById('phone');
+    var password=document.getElementById('password');  
+    if (username.value == "" || phone.value == "" || password.value == "") {
+      username.style.borderColor= "red";
+    }
+    else if (phone.value == "") {
+      phone.style.borderColor = "red";
+  
+    }
+    else if (password.value == "") {
+      password.style.borderColor = "red";
+    }
+    } 
+    
+  }
+</script>
+</html>
